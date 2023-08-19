@@ -1,0 +1,84 @@
+
+{% extends "main/base.html" %}
+{% load static %}
+
+{% block content %}
+    <section id="top" class="text-center" 
+        style="overflow-x:hidden;height: 100%; background-color: #FAF9F6;">
+        <!--title section-->
+        {% include "main/snippets/topbar.html" %}
+        
+        <div class="como">
+            <img src="{% static 'main/images/mos.jpg' %}" />
+            <div class="como1">
+                <h3>About Comoros</h3>
+            </div>
+        </div>
+        <h2>Delegates</h2>
+        <div class="dele2">
+            <img 
+                src="{% static "main/images/pres.png" %}"
+            />
+            <h3>H.E  Azali Assoumani</h3>
+            <h3 style="color: #4C9A2A;font-weight: bold;">
+                Head of State
+            </h3>
+        </div>
+        <div class="dele">
+            <div class="dele1">
+                <img 
+                    src="{% static "main/images/fore.png" %}"
+                />
+                <h3>Hon. Dhoihir Dhoulkamal</h3>
+                <h3 style="color: #4C9A2A;font-weight: bold;">Min. Foreign Affairs</h3>
+            </div>
+            <div class="dele1">
+                <img 
+                    src="{% static "main/images/final.png" %}"
+                />
+                <h3>Hon. Mohamed Maoulana Said</h3>
+                <h3 style="color: #4C9A2A;font-weight: bold;">
+                    Secretary General Min of Foreign Affairs
+                </h3>
+            </div>
+            <div class="dele4">
+                <img 
+                    src="{% static "main/images/prof_true.png" %}"
+                />
+                <h3>H.E Prof. Alex Bashasha</h3>
+                <h3 style="color: #4C9A2A;font-weight: bold;">Consul General</h3>
+            </div>
+            <div class="dele4">
+                <img 
+                    src="{% static "main/images/uncle.png" %}"
+                />
+                <h3>Dr. Jack Kinobe Sserunkuuma</h3>
+                <h3 style="color: #4C9A2A;font-weight: bold;">
+                    Charge' d'Affaires
+                </h3>
+            </div>
+        </div>
+        <!--
+            <div class="dele3">
+            <div class="dele4">
+                <img 
+                    src="{% static "main/images/prof_true.png" %}"
+                />
+                <h3>H.E Prof. Alex Bashasha</h3>
+                <h3 style="color: #4C9A2A;font-weight: bold;">Consul General</h3>
+            </div>
+            <div class="dele4">
+                <img 
+                    src="{% static "main/images/uncle.png" %}"
+                />
+                <h3>Dr. Jack Kinobe Sserunkuuma</h3>
+                <h3 style="color: #4C9A2A;font-weight: bold;">
+                    Charge' d'Affaires
+                </h3>
+            </div>
+        </div>
+        -->
+        
+        {% include "main/snippets/footer.html" %}
+    </section>
+{% endblock %}
